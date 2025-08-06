@@ -8,7 +8,7 @@ public class Agenda
     public void AgregarContacto(Contacto contacto)
     {
         contactos.Add(contacto);
-        Console.WriteLine("✅Contacto agregado exitosamente.\n");
+        Console.WriteLine("Contacto agregado exitosamente.\n");
     }
     public void MostrarContactos()
     {
@@ -29,7 +29,7 @@ public class Agenda
        c.Nombre.ToLower().Contains(nombre.ToLower())).ToList();
         if (encontrados.Count == 0)
         {
-            Console.WriteLine("❌No se encontró ningún contacto con ese nombre.");
+            Console.WriteLine("No se encontró ningún contacto con ese nombre.");
             return;
         }
         Console.WriteLine($"\n Resultados de búsqueda para '{nombre}':\n");
@@ -49,7 +49,7 @@ public class Agenda
         }
         else
         {
-            Console.WriteLine("❌No se encontró el contacto.");
+            Console.WriteLine("No se encontró el contacto.");
         }
     }
 }
